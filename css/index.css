@@ -1,0 +1,335 @@
+* {
+    box-sizing: border-box;
+    /* outline: 1px solid rgba(255, 0, 0, 0.349); */
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Solway', serif;
+    background-color: #E5F5FC;
+    background: repeating-linear-gradient(#E5F5FC, white, #E5F5FC, transparent);
+    display: grid;
+    grid-template: auto;
+    scroll-snap-type: Y mandatory;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-stretch: condensed;
+    padding-top: 1rem;
+    padding: 0;
+    margin: 0 0 1rem 0;
+}
+
+p {
+    font-size: 1.2rem;
+    font-stretch: condensed;
+    font-weight: 300;
+    line-height: 2rem;
+    padding: 0;
+}
+
+section {
+    max-width: 100vw;
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: grid;
+    scroll-snap-align: center;
+}
+
+section:last-of-type {
+    position: relative;
+}
+
+ .sec1 {
+    background-image: url(../img/mainbackground.png);
+    background-position: bottom;
+    height: 150vh;
+}
+
+.sec2 {
+    background-image: url(../img/greenforest.png);
+    background-position: top;
+}
+
+.sec2 p {
+    text-align: center;
+    grid-auto-flow: row;
+}
+
+.sec2 .loves {
+    margin: -4.5vh 30vw 0 30vw;
+    color: white;
+    font-style: oblique;
+    z-index: 10;
+}
+
+.sec2 .disaster {
+    margin: 70vh 30vw 1vh 10vw;
+    text-align: left;
+}
+
+.sec3 {
+    background-image: url(../img/windowmap.png);
+    background-position: center left;
+    background-size: 900px;
+    place-items: center;
+}
+
+.sec3 p {
+   text-align: right;
+}
+
+.sec3 .about {
+    margin: 0 10vw 0 40vw;
+}
+
+.sec4 {
+    background-image: url(../img/skulls.png);
+    background-position: center bottom;
+}
+
+.sec4 p {
+    margin: 2vh 30vw 0 10vw;
+    text-align: left;
+}
+
+.sec5 {
+    background-image: url(../img/skulls2.png);
+    background-position: center top;
+}
+
+.sec5 .life {
+    margin: -4.5vh 30vw 0 30vw;
+    color: white;
+    font-style: oblique;
+    text-align: center;
+    z-index: 10;
+}
+
+.sec5 .young {
+    margin: 70vh 10vw 2vh 30vw;
+    text-align: right;
+}
+
+
+.sec6 {
+    background-image: url(../img/OriginalRgb_Portrett_Gert_Nygardshaug-2-kopi.png);
+    background-position: center right;
+    background-size: 500px;
+    place-content: center;
+}
+
+.sec6 p, .sec7 p {
+    text-align: left;
+ }
+ 
+ .sec6 .theauthor {
+     margin: 5vh 40vw 20vh 10vw;
+ }
+
+ .sec7 {
+     background-image: url(../img/butterflies2.png);
+     background-size: 300px;
+     background-position: top center;
+     place-content: center;
+ }
+
+.sec7 .thebooks {
+    margin: 0 10vw 0 40vw;
+    text-align: right;
+}
+
+.sec7 .thebooks p {
+    text-align: right;
+}
+ 
+.sec8 {
+    background-image: url(../img/leafbook.png);
+    background-position: left;
+    background-size: 600px;
+    place-content: center;
+}
+ 
+.sec8 div{
+    display: grid;
+    place-items: center;
+}
+
+.sec8  .books {
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+    justify-content: space-between;
+    margin: 0 10vw 0 10vw;
+}
+
+.sec8  .himmel, .sec8 .afrodites {
+    width: 150px;
+    margin: 0 2rem 0 2rem;
+    padding: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 2%;
+}
+
+.sec8  .zoo {
+    width: 250px;
+    margin:  0 2rem 0 2rem;
+    padding: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 2%;
+}
+
+.sec8 .button {
+    background-color: #BE432B;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    margin-top: -1.5rem;
+    border-radius: 2%;
+}
+
+.sec8 .button:hover {
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: -1.7rem;
+}
+
+section:last-of-type {
+    position: relative;
+}
+
+section:last-of-type .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(#F4FBFE, #F4FBFE, transparent);
+}
+
+section:last-of-type .overlay h1 {
+    text-align: left;
+    margin: 0 40vw 0 10vw;
+    font-style: oblique;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+section:last-of-type video {
+    width: 100%;
+}
+
+/* responsive */
+
+@media (max-width: 1200px) {
+    .sec5 .young {
+        margin: 60vh 10vw 2vh 30vw;
+    }
+}
+
+@media (max-width: 1000px) {
+    .sec1 {
+        height: 120vh;
+    }
+    .sec3 .about {
+        margin: 0 10vw 0 50vw;
+    }
+    .sec6 .theauthor {
+        margin: 5vh 50vw 20vh 10vw;
+    }
+}
+
+@media (max-width: 900px) {
+    .sec1 {
+        height: 110vh;
+    }
+    .sec2 .disaster {
+        margin: 50vh 30vw 1vh 10vw;
+    }
+    .sec5 .young {
+        margin: 50vh 10vw 2vh 30vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .sec1 {
+        height: 100vh;
+    }
+    .sec2 .disaster {
+        margin: 50vh 10vw 1vh 10vw;
+    }
+    .sec3 {
+        height: 180vh;
+        background-position: top left;
+        grid-auto-flow: row;
+    }
+    .sec3 .about {
+        margin: 50vh 10vw 2vh 10vw;
+    }
+    .sec4 p {
+        margin: 2vh 10vw 0 10vw;
+    }
+    .sec5 .young {
+        margin: 50vh 10vw 2vh 10vw;
+    }
+    .sec6 {
+        height: 180vh;
+        background-position: top right;
+        grid-auto-flow: row;
+    }
+    .sec6 .theauthor {
+        margin: 50vh 10vw 2vh 10vw;
+    }
+    .sec7 .thebooks {
+        margin: 0 10vw 0 10vw;
+    }
+    .sec8  .books {
+        grid-auto-flow: row;
+    }
+    .book1, .book3 {
+        visibility: hidden;
+    }
+    section:last-of-type .overlay h1 {
+        margin: 0 10vw 0 10vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .sec2 .loves {
+        margin: -90vh 10vw 0 10vw;
+        color: black;
+    }
+    .sec5 .life {
+        margin: -6vh 10vw 0 10vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .sec5 .young {
+        margin: 20vh 10vw 2vh 10vw;
+    }
+    .sec6 .theauthor {
+        margin: 65vh 10vw 2vh 10vw;
+    }
+    .sec7 .thebooks {
+        margin: 40vh 10vw 0 10vw;
+    }
+    h2 {
+        text-align: center;
+    }
+    section p {
+        text-align: left;
+    }
+}
+
+
+
+
+
+
+
